@@ -1,14 +1,7 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    """squares a matrix
-
-    Args:
-        matrix: the matrix to be squared
-
-    Returns:
-        the squared matrix
-    """
+    """Squares elements in a matrix"""
+    newMatrix = matrix.copy()
     for i in range(len(matrix)):
-        for j in range(len(matrix[i])):
-            matrix[i][j] = (matrix[i][j]) ** 2
-    return matrix
+        newMatrix[i] = list(map(lambda x: x**2, matrix[i]))
+    return (newMatrix)
