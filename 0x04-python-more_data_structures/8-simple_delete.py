@@ -7,7 +7,6 @@ def simple_delete(a_dictionary, key=""):
     Returns:
         modified dictionary
     """
-    if a_dictionary.get(key) != None:
+    if a_dictionary.get(key) is not None:
         a_dictionary.pop(key)
-    
     return a_dictionary
