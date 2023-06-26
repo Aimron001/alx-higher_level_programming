@@ -6,7 +6,6 @@ def magic_calculation(a, b):
         args:
             a: val 1
             b: val 2
-        
         Returns:
             results of the calculation
     """
@@ -17,7 +16,7 @@ def magic_calculation(a, b):
                 raise Exception('Too far')
             else:
                 result += a ** b / i
-        except:
+        except Exception:
             result = b + a
             break
     return (result)
