@@ -66,5 +66,7 @@ class Rectangle:
         return ("".join(area_str))
 
     def __repr__(self):
-        """Return the string representation of the Rectangle."""
-        return f"Rectangle({str(self.__width)}, {str(self.__height})"
+        """Returns string representation of the Rectangle."""
+        area_rect = "Rectangle(" + str(self.__width)
+        area_rect += ", " + str(self.__height) + ")"
+        return (area_rect)
