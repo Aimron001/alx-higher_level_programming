@@ -49,3 +49,18 @@ class Rectangle:
         if self.__height == 0 or self.__width == 0:
             return 0
         return (2 * (self.__width + self.__height))
+
+    def __str__(self):
+        """Return the area representation of the area Rectangle.
+
+        Represents the rectangle with series "#" character.
+        """
+        if self.__width == 0 or self.__height == 0:
+            return ("")
+
+        area_str = []
+        for i in range(self.__height):
+            [area_str.append('#') for j in range(self.__width)]
+            if i != self.__height - 1:
+                area_str.append("\n")
+        return ("".join(area_str))
