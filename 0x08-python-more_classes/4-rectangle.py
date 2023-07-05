@@ -4,7 +4,6 @@
 
 class Rectangle:
     """Defines a rectangle"""
-    number_of_instances = 0
     def __init__(self, width=0, height=0):
         """Initialize a new Rectangle object.
 
@@ -12,7 +11,6 @@ class Rectangle:
             width (int): The width of the rectangle.
             height (int): The height of the rectangle.
         """
-        type(self).number_of_instances += 1
         self.width = width
         self.height = height
 
@@ -72,7 +70,3 @@ class Rectangle:
         area_rect = "Rectangle(" + str(self.__width)
         area_rect += ", " + str(self.__height) + ")"
         return (area_rect)
-    def __def__(self):
-        """prints bye when an instance is deleted"""
-        type(self).number_of_instances -= 1
-        print("Bye rectangle...")
