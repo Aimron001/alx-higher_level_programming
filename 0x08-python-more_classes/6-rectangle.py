@@ -72,7 +72,7 @@ class Rectangle:
         area_rect = "Rectangle(" + str(self.__width)
         area_rect += ", " + str(self.__height) + ")"
         return (area_rect)
-    def __def__(self):
+    def __del__(self):
         """prints bye when an instance is deleted"""
         type(self).number_of_instances -= 1
         print("Bye rectangle...")
