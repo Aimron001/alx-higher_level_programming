@@ -38,4 +38,3 @@ class Student:
         """
         for key, val in json.items():
             setattr(self, key, val)
-
