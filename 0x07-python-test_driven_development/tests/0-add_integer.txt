@@ -1,0 +1,53 @@
+# 1-add_integer.txt
+=================================
+How to use the 0-add_integer.txt
+=================================
+
+This module defines the add function
+``add_integer(a, b=98)``.
+
+Usage
+=====
+``add_integer(...)`` returns the sum of the two integers.
+
+::
+	>>> from __future__ import absolute_import
+	>>> add_integer = __import__('0-add_integer').add_integer
+
+	>>> add_integer(1, 2)
+	3
+	>>> add_integer(100, -2)
+	98
+
+The function also works with float values
+
+::
+	>>> add_integer(2.0, 5)
+	7
+
+The float values are casted to integers
+
+::
+	>>> add_integer(2.9, 5)
+	7
+
+The second arguement is optional
+
+::
+	>>> add_integer(12)
+	110
+
+Non-Numbers
+===========
+``add_integer`` expects only integers and floats else a TypeError is raised
+::
+	>>> add_integer("hey", 9)
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
+
+::
+        >>> add_integer(9, "hey")
+        Traceback (most recent call last):
+	...
+	TypeError: b must be an integer 
