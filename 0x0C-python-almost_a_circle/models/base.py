@@ -1,21 +1,13 @@
 #!/usr/bin/python3
-
-"""
-Almost a circle Project
-Preparing for the AirBnB Clone project
-"""
-import json
-import os.path
-import csv
+""" defines a Base class """
 
 
 class Base:
-    """Base class"""
+    """represents the Base class"""
     __nb_objects = 0
-
     def __init__(self, id=None):
-        if id is not None:
+        if id:
             self.id = id
         else:
-            self.__class__.__nb_objects += 1
-            self.id = self.__class__.__nb_objects
+            __nb_objects += 1
+            self.id = __nb_objects
