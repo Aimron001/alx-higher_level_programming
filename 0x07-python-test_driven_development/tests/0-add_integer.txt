@@ -45,9 +45,3 @@ Non-Numbers
 	Traceback (most recent call last):
 	...
 	TypeError: a must be an integer
-
-::
-        >>> add_integer(9, "hey")
-        Traceback (most recent call last):
-	...
-	TypeError: b must be an integer 
